@@ -54,8 +54,7 @@
         <div class="menu">
             <a href="/" th:classappend="${page == 'home'} ? 'active'">홈</a>
             <a href="/onbid" th:classappend="${page == 'onbid'} ? 'active'">물건 검색</a>
-            <a href="/wishlist" th:if="${session.username}"
-               th:classappend="${page == 'wishlist'} ? 'active'">내 찜목록</a>
+            <a href="/wishlist" th:classappend="${page == 'wishlist'} ? 'active'">내 찜목록</a>
             <a href="/login" th:unless="${session.username}">로그인</a>
             <a href="/register" th:unless="${session.username}">회원가입</a>
             <a href="/logout" th:if="${session.username}">로그아웃</a>
